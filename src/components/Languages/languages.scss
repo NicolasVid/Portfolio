@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.languages {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: vars.$charcoal-color;
+    flex-wrap: wrap;
+
+    &__images {
+        height: 120px;
+        margin: 3rem;
+    }
+    
+}

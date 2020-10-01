@@ -1,0 +1,51 @@
+@use 'src/styles/vars';
+
+.project {
+    background-color: vars.$charcoal-color;
+    min-height: 500px;
+
+
+    h1 {
+        margin: 4rem;
+        font-size: 24px;
+        font-weight: bold;
+        color: vars.$silver-color;
+        letter-spacing: 0.3rem;
+    }
+
+        &__card {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &--item {
+                perspective: 600px;
+                margin: 10%;
+                background-color: vars.$silver-color;
+                min-width: 300px;
+                height: 250px;
+                border-radius:3px;
+                box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                    h2 {
+                        margin: 1rem;
+                        font-weight: bold;
+                    }
+                
+                    ul {
+                        margin: 1rem;
+                    }
+                
+                    li {
+                        margin-top: 1rem;
+                    }     
+        }
+    }
+}
