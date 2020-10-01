@@ -7,14 +7,17 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1rem 0;
 
     &__card {
-        margin: 2%;
+
+        margin: 4% 2%;
         background-color: vars.$silver-color;
         height: 250px;
         min-width: 200px;
         border-radius: 5px;
         box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
 
         h1 {
             margin: 1rem;
@@ -27,6 +30,11 @@
 
         li {
             margin-top: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            
         }
     }
 }

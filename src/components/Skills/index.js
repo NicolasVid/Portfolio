@@ -19,8 +19,6 @@ const Skills = () => (
       <ul>
         <li>Node JS</li>
         <li>Express</li>
-        <li>Jsonwebtoken</li>
-        <li>Socket.io</li>
       </ul>
     </div>
     <div className="skills__card">

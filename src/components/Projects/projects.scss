@@ -3,26 +3,53 @@
 .project {
     background-color: vars.$charcoal-color;
     min-height: 500px;
+    position: relative;
+
+    &__imageContainer {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    @media (max-width: 768px) {
+        .project__image{
+            position: relative;
+        }
+    };
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        width: 260px;
+        margin: auto;
+        left: 0;
+        // Petit ajustement pour bien centrer l'image
+        right: 10px;
+    }
 
 
     h1 {
-        margin: 4rem;
-        font-size: 24px;
+        font-size: 28px;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        width: 60%;
+        margin: 0 auto;
         font-weight: bold;
         color: vars.$silver-color;
         letter-spacing: 0.3rem;
+        padding-top: 4rem;
     }
 
         &__card {
-
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
+            padding-top: 4rem;
 
             &--item {
+                z-index: 1;
                 perspective: 600px;
-                margin: 10%;
+                margin: 7% 10%;
                 background-color: vars.$silver-color;
                 min-width: 300px;
                 height: 250px;

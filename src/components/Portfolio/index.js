@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './portfolio.scss';
-import Presentation from '../Prensentation';
+import Presentation from '../Presentation';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Languages from '../Languages';

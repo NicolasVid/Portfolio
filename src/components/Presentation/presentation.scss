@@ -1,0 +1,64 @@
+@use 'src/styles/vars';
+
+.presentation {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: vars.$silver-color;
+    text-align: left;
+    padding-left: 20%;
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 24px;
+        z-index:1;
+    }
+
+    &__image {
+        position: absolute;
+        width: 250px;
+        left: 25px;
+        animation: moove 10s linear infinite;
+        -webkit-animation: swing 8s infinite linear;
+        -moz-animation: swing 8s infinite linear;
+        animation: swing 8s infinite linear;
+    }
+}
+
+@-webkit-keyframes swing {
+    0%{-webkit-transform:rotate(-15deg)}
+    50%{-webkit-transform:rotate(15deg)}
+    100%{-webkit-transform:rotate(-15deg)}
+}
+
+@-moz-keyframes swing {
+    0%{-moz-transform:rotate(-15deg)}
+    50%{-moz-transform:rotate(15deg)}
+    100%{-moz-transform:rotate(-15deg)}
+}
+
+@keyframes swing {
+    0%{transform:rotate(-15deg)}
+    50%{transform:rotate(15deg)}
+    100%{transform:rotate(-15deg)}
+}
+
+@media (max-width: 768px) {
+    .presentation {
+        text-align: center;
+        padding: 2rem 2rem 0rem 2rem;
+
+    
+        &__image {
+            position: relative;
+            margin: 2rem auto;
+        }
+    }
+}

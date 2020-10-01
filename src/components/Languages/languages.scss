@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .languages {
-    min-height: 200px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +9,8 @@
     flex-wrap: wrap;
 
     &__images {
-        height: 120px;
-        margin: 3rem;
+        height: 110px;
+        margin: 2rem 3rem;
     }
     
 }
