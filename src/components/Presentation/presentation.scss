@@ -4,15 +4,17 @@
     min-height: 300px;
     display: flex;
     justify-content: center;
+    align-items: left;
     flex-direction: column;
     background-color: vars.$silver-color;
     text-align: left;
-    padding-left: 20%;
+    padding-left: 17rem;
+    position: relative;
 
     h1 {
         font-size: 30px;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin: 1.5rem 0;
         z-index: 1;
     }
 
@@ -21,15 +23,39 @@
         z-index:1;
     }
 
-    &__image {
+    &__avatar {
         position: absolute;
         width: 250px;
-        left: 25px;
-        animation: moove 10s linear infinite;
+        left: 15px;
         -webkit-animation: swing 8s infinite linear;
         -moz-animation: swing 8s infinite linear;
         animation: swing 8s infinite linear;
     }
+
+   
+    &__github {
+
+        img {
+            position: absolute;
+            width: 70px;
+            right: 30%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+        &__linkedin {
+
+            img {
+            position: absolute;
+            width: 60px;
+            right: 10%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            }
+        }  
 }
 
 @-webkit-keyframes swing {
@@ -50,15 +76,41 @@
     100%{transform:rotate(-15deg)}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
     .presentation {
         text-align: center;
-        padding: 2rem 2rem 0rem 2rem;
+        padding: 1rem 2rem 0rem 2rem;
 
     
-        &__image {
+        &__avatar {
             position: relative;
+            right: 10px;
             margin: 2rem auto;
+            
+        }
+
+        &__github img {
+                position: relative;
+                right: 0;
+                margin-right: 3rem;
+            }
+
+        &__linkedin img {
+            position: relative;
+            right: 0;
+            margin-bottom: 0.3rem;
         }
     }
+}
+
+.half-circle {
+    background-color: vars.$charcoal-color;
+    width: 80px;
+    height: 40px;
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

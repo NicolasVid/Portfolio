@@ -10,7 +10,7 @@
         position: relative;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         .project__image{
             position: relative;
         }
@@ -44,7 +44,7 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-            padding-top: 4rem;
+            padding: 2rem 0;
 
             &--item {
                 z-index: 1;
