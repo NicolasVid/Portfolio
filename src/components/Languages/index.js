@@ -6,21 +6,20 @@ import node from 'src/images/node.png';
 
 const Languages = () => (
   <div className="languages">
-    <img
-      src={js}
-      className="languages__images"
-      alt="Banner GIF"
-    />
-    <img
-      src={react}
-      className="languages__images"
-      alt="Banner GIF"
-    />
-    <img
-      src={node}
-      className="languages__images"
-      alt="Banner GIF"
-    />
+    <div className="languages__images">
+      <img
+        src={js}
+        alt="Banner GIF"
+      />
+      <img
+        src={react}
+        alt="Banner GIF"
+      />
+      <img
+        src={node}
+        alt="Banner GIF"
+      />
+    </div>
   </div>
 );
 

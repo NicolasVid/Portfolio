@@ -20,8 +20,11 @@ const Presentation = () => (
         />
       </a>
     </div>
-    <h1>Nicolas Vidale</h1>
-    <h2>Développeur Front-end passionné</h2>
+    <div className="presentation__title">
+      <h1>Nicolas Vidale</h1>
+      <h2>Développeur Front-end passionné</h2>
+      <p>nicolas.vidale@orange.fr</p>
+    </div>
     <img
       src={avatar}
       className="presentation__avatar"
