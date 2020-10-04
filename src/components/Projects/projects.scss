@@ -10,9 +10,22 @@
         position: relative;
     }
 
+    &-responsive {
+        display:none;
+        color: vars.$wood-color;
+        font-size: 14px;
+        border: 1px solid vars.$wood-color;
+        padding: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+
     @media (max-width: 1000px) {
         .project__image{
             position: relative;
+        }
+
+        .project__card {
+            margin-top: 2rem;
         }
     };
 
@@ -44,16 +57,17 @@
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 2rem 0;
+            padding-bottom: 2rem;
 
-            &--item {
+            &__item {
+                position: relative;
                 z-index: 1;
                 perspective: 600px;
                 margin: 7% 10%;
                 background-color: vars.$silver-color;
                 min-width: 300px;
-                height: 250px;
-                border-radius:3px;
+                min-height: 250px;
+                border-radius:5px;
                 box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
                 position: relative;
                 display: flex;
@@ -64,6 +78,9 @@
                     h2 {
                         margin: 1rem;
                         font-weight: bold;
+                        letter-spacing: 0.1rem;
+                        font-size: 20px;
+                        color: vars.$charcoal-color;
                     }
                 
                     ul {
@@ -71,8 +88,90 @@
                     }
                 
                     li {
-                        margin-top: 1rem;
-                    }     
+                        margin-bottom: 1.2rem;
+                        padding-bottom: 0.4rem;
+                        border-bottom: 1px solid vars.$charcoal-color;
+                        width: 150px;
+                    }
+                
+                &--hover {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius:5px;
+                    border: 1.5px solid vars.$silver-color;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    background-color: vars.$wood-color;
+                    transition: all 0.5s ease-in-out;
+
+                    a {
+                        margin: 1.5rem 0;
+                        text-decoration: none;
+                    }
+
+                    button {
+                        padding: 1rem;
+                        border-radius: 5px;
+                        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+                        border: none;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05rem;
+                        transition: all 0.5s ease-in-out;
+                        background-color: vars.$silver-color;
+                        border: 0.5px solid vars.$silver-color;
+
+
+
+                        &:hover {
+                            background-color: vars.$charcoal-color;
+                            color: vars.$silver-color;
+                            border: 0.5px solid vars.$silver-color;
+                        }
+                    }
+                }
+
+                &:hover &--hover {
+                    opacity: 1;
+                }
+
+                @media (max-width: 768px) {
+                    &--hover {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                        border-radius:5px;
+                        border: 1.5px solid vars.$silver-color;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 1;
+                        background-color: vars.$silver-color;
+    
+                        a {
+                            margin: 0 1rem 1rem 1rem ;
+                            text-decoration: none;
+                        }
+    
+                        button {
+                            padding: 1rem;
+                            border-radius: 5px;
+                            box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+                            border: none;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05rem;
+                            font-size: 12px;
+                            background-color: vars.$charcoal-color;
+                            color: vars.$silver-color;
+                        }
+    
+                    }
+                }
+                
         }
     }
 }
