@@ -46,6 +46,19 @@ const Projects = () => (
           <a href="http://34.207.247.234:5000/"><button type="button">Le site</button></a>
         </div>
       </div>
+      <div className="project__card__item">
+        <h2>MOT</h2>
+        <ul>
+          <li>React | Redux</li>
+          <li>Node JS | Express</li>
+          <li>MongoDB</li>
+        </ul>
+        <div className="project-responsive">Voir les liens</div>
+        <div className="project__card__item--hover">
+          <a href="https://github.com/NicolasVid/MOT"><button type="button">Code source</button></a>
+          <a href="https://nicolasvid.github.io/MOT"><button type="button">Le site</button></a>
+        </div>
+      </div>
     </div>
     <div className="project__imageContainer">
       <img
