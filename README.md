@@ -6,7 +6,7 @@ Lien du portfolio
 
 https://nicolasvid.github.io/Portfolio/
 
-Lien du portfolio
+Lien linkedin
 ----------
 
 https://www.linkedin.com/in/nicolasvidale/
