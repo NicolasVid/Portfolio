@@ -43,7 +43,7 @@ const Projects = () => (
         <div className="project-responsive">Voir les liens</div>
         <div className="project__card__item--hover">
           <a href="https://github.com/NicolasVid/Hero"><button type="button">Code source</button></a>
-          <a href="https://youtu.be/yRnSeJcDcPs?t=2751"><button type="button">Présentation</button></a>
+          <a href="http://alexis-quirantes.fr:5000/#/"><button type="button">Le site</button></a>
         </div>
       </div>
       <div className="project__card__item">
